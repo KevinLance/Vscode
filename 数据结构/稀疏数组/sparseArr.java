@@ -16,7 +16,7 @@ public class sparseArr {
                 System.out.printf("%d\t", data);
             }
             System.out.println();
-        }   
+        }
         int sum = 0;
         // 将二维数组 转 稀疏数组的思路
         // 1. 先遍历二维数组 得到非 0 数据的个数
@@ -54,6 +54,13 @@ public class sparseArr {
         System.out.printf("%d\t%d\t%d\t\n", sparseArr[i][0], sparseArr[i][1], sparseArr[i][2]);
         }
         System.out.println();
-        
+
+        //将稀疏数组 --》 恢复成 原始的二维数组
+        /*
+        *
+        1. 先读取稀疏数组的第一行,根据第一行的数据,创建原始的二维数组,比如上面的
+        chessArr2 = int
+        2. 在读取稀疏数组后几行的数据,并赋给 原始的二维数组 即可.
+         */
     }
 }
